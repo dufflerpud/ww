@@ -36,7 +36,7 @@ my $PRETTYJS = ",";
 
 my $FORMNAME = "form";
 
-&setup(stderr=>"ww",payment_system=>1);
+&setup(stderr=>"ww",payment_system=>1,preset_language=>"en");
 
 $_ = $cpi_vars::BASEDIR; # Eliminate only used once error
 my $JAVASCRIPT = "$cpi_vars::BASEDIR/lib/$cpi_vars::PROG.js";
