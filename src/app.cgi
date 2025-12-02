@@ -255,7 +255,6 @@ sub footer
 	"<th>",&sfbutton("XL(Graph)","graph","ndays",1),"</th>",
 	"<th>",&sfbutton("XL(Week graph)","graph","ndays",7),"</th>",
 	"<th>",&sfbutton("XL(Total report)","fullreport"),"</th>",
-	"<th>",&sfbutton("XL(Administration)","admin"),"</th>",
 #	"<th><a href=$restaurant_href target=restaurants>XL(Restaurants index)</a></th>",
         "<th>",&logout_select("form"),"</th>",
 	"</tr></table></center></form></body>");
