@@ -22,7 +22,7 @@ use lib "/usr/local/lib/perl";
 use cpi_file qw(cleanup fatal write_file);
 use cpi_time qw(timestr);
 use cpi_cgi qw(show_vars);
-use cpi_user qw(admin_page logout_select users_in_group);
+use cpi_user qw(logout_select users_in_group);
 use cpi_setup qw(setup);
 use cpi_translate qw(trans xprint);
 use cpi_db qw(DBadd DBget DBpop DBput DBwrite);
@@ -1208,7 +1208,6 @@ sub fixup_db
 #	Main								#
 #########################################################################
 #&show_vars();
-&admin_page() if( ($cpi_vars::FORM{func}||"") eq "admin" );
 
 &fixup_db() if( ($ARGV[0]||"") eq "fix" );
 
