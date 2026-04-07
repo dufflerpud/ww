@@ -1,1 +1,1 @@
-/usr/local/projects/common/Makefile.simple
+../common/Makefile.simple
