@@ -1045,15 +1045,12 @@ sub day_page
 
     my $timetypes_sub = '"' . join("\",\"",@timetypes) . '"';
 
-    $_ = $cpi_vars::THIS; 	# Eliminate only used once error
-
     &xprint(&top_of_page($curday),
         &template( $JAVASCRIPT,
 	    "%%BODY_TAGS%%",		$cpi_vars::BODY_TAGS,
 	    "%%TABLE_TAGS%%",		$cpi_vars::TABLE_TAGS,
 	    "%%SID%%",			$cpi_vars::SID,
 	    "%%USER%%",			$cpi_vars::USER,
-	    "%%THIS%%",			$cpi_vars::THIS,
 	    "%%CURRENT_WEIGHT%%",	$current_weight_sub,
 	    "%%GOAL_WEIGHT%%",		$goal_weight_sub,
 	    "%%day%%",			$curday,
